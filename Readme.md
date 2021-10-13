@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
-* Студент: [Нина Стафеева](https://up.htmlacademy.ru/adaptive/23/user/1797575).
-* Наставник:[Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
+* Студент: [nobao-test].
+* Наставник:[nobao].
 
 ---
 
@@ -54,5 +54,3 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[check-image]: https://github.com/htmlacademy-adaptive/1797575-sedona-23/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/1797575-sedona-23/actions
