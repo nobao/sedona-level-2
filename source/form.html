@@ -57,11 +57,11 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label form__label--text" for="user-name">Имя<sup>*</sup>:</label>
-                <input class="form__input" type="text" name="user-name" id="user-name" placeholder="Петр">
+                <input class="form__input" type="text" name="user-name" id="user-name" placeholder="Петр" required>
               </li>
               <li class="form__item">
                 <label class="form__label form__label--text" for="user-surname">Фамилия<sup>*</sup>:</label>
-                <input class="form__input" type="text" name="user-surname" id="user-surname" placeholder="Иванов">
+                <input class="form__input" type="text" name="user-surname" id="user-surname" placeholder="Иванов" required>
               </li>
               <li class="form__item">
                 <label class="form__label form__label--text" for="user-patronymic">Отчество:</label>
@@ -75,13 +75,13 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label form__label--text" for="user-phone">Контактный телефон<sup>*</sup>:</label>
-                <input class="form__input form__input--phone" type="text" name="user-phone" id="user-phone"
-                  placeholder="Введите телефон">
+                <input class="form__input form__input--phone" type="tel" name="user-phone" id="user-phone"
+                  placeholder="Введите телефон" required>
               </li>
               <li class="form__item">
                 <label class="form__label form__label--text" for="user-email">Электронная почта<sup>*</sup>:</label>
-                <input class="form__input form__input--email" type="text" name="user-email" id="user-email"
-                  placeholder="Введите e-mail">
+                <input class="form__input form__input--email" type="email" name="user-email" id="user-email"
+                  placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
