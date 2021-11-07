@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Страница для отзывов о городе Седоне</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -16,7 +18,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -26,7 +28,7 @@
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a href="form.html">
+            <a>
               Форма отзыва
             </a>
           </li>
@@ -41,6 +43,11 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Страница отзыва о городе Седоне</h1>
+    <section class="welcome">
+      <div class="welcome__wrapper">
+        <h2 class="visually-hidden">Приветствуем вас в городе Седоне</h2>
+      </div>
+    </section>
     <section class="intro">
       <div class="intro__wrapper">
         <h2 class="intro__title">Оставьте свой отзыв</h2>
@@ -51,7 +58,7 @@
     <section class="review">
       <div class="review__wrapper">
         <h2 class="visually-hidden">Форма отзыва</h2>
-        <form class="review__form form" action="#">
+        <form class="review__form form" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Представьтесь:</legend>
             <ul class="form__list">
@@ -61,7 +68,8 @@
               </li>
               <li class="form__item">
                 <label class="form__label form__label--text" for="user-surname">Фамилия<sup>*</sup>:</label>
-                <input class="form__input" type="text" name="user-surname" id="user-surname" placeholder="Иванов" required>
+                <input class="form__input" type="text" name="user-surname" id="user-surname" placeholder="Иванов"
+                  required>
               </li>
               <li class="form__item">
                 <label class="form__label form__label--text" for="user-patronymic">Отчество:</label>
