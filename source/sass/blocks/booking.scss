@@ -1,0 +1,26 @@
+.booking {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.booking__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.booking__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}

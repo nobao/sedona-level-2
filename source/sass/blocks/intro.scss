@@ -1,0 +1,36 @@
+.intro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.intro__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 124px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 0 358px;
+  }
+}
+
+.intro__title {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.intro__lead {
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
