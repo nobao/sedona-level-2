@@ -1,7 +1,31 @@
+// Fonts
+$font-family: "PT Sans", "Arial", sans-serif;
+
 // Colors
-$color: #81b3d2;
-$color-hover: #669ec0;
-$color-push: #5496bd;
+$box-shadow-desktop: rgba(0, 1, 1, 0.2);
+$bg-page-desktop: #f2f2f2;
+$white: #ffffff;
+$black: #000000;
+$bg-blue: #81b3d2;
+$bg-blue-hover: #669ec0;
+$bg-blue-active: #5496bd;
+$white-active: rgba($white, 0.3);
+$black-active: rgba($black, 0.3);
+$text-color: #333333;
+$gray-color: #e5e5e5;
+$current-color: #766357;
+$border-gray: #d6d6d6;
+$bg-photo-card-1: #f2f2f2;
+$bg-photo-card-2: #eaeaea;
+
+$bg-input-color: $bg-page-desktop;
+$bg-input-color-hover: $gray-color;
+$bg-input-color-active: #d5d5d5;
+
+$player__interface-mobile: $bg-input-color;
+$player__interface-tablet: rgba($black, 0.6);
+$player-icon-mobile: #5c6870;
+$player-icon-mobile-hover: $text-color;
 
 // Viewports
 $tablet-width: 768px;

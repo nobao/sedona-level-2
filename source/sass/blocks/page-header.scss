@@ -1,16 +1,30 @@
 .page-header {
-  display: flex;
-  flex-direction: column-reverse;
-  min-height: 56px;
-
-  background-color: #ffffff;
-  color: #ffffff;
+  position: relative;
+  background-color: $white;
 }
 
 .page-header__logo {
-  height: 84px;
+  display: block;
+  height: 56px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
 
   @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 96px;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: $desktop-width) {
+    width: 187px;
     height: 96px;
   }
 }
