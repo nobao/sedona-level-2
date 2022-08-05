@@ -1,0 +1,90 @@
+.intro {
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 13px;
+  background-color: $bg-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  background-image: url("../img/bg-intro-index.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-intro-index@2x.jpg");
+  }
+
+  &:after {
+    content: "";
+    background-image: url("../img/intro-triangle.svg");
+    height: 57px;
+    width: 100%;
+    bottom: -1px;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &--index {
+    height: 389px;
+    background-position-y: center;
+
+    @media (min-width: $tablet-width) {
+      height: 518px;
+    }
+  }
+
+  &--other {
+    @media (max-width: $mobile-width-only) {
+      min-height: 157px;
+      background-position-y: bottom;
+      background-image: url("../img/bg-intro-other.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-intro-other@2x.jpg");
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      min-height: 290px;
+      background-position-y: bottom;
+      background-size: 156% auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: cover;
+      min-height: 300px;
+    }
+  }
+}
+
+.intro__text {
+  padding-top: 90px;
+  margin: 0 auto;
+  display: block;
+  width: 282px;
+  height: 214px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 78px;
+    width: 461px;
+    height: 350px;
+  }
+
+  &--other {
+    width: 229px;
+    height: 39px;
+    padding-top: 52px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 95px;
+      width: 457px;
+      height: 78px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 101px;
+    }
+  }
+}
