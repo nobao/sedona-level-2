@@ -1,0 +1,35 @@
+.page-footer {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0 auto;
+  height: 233px;
+  text-align: center;
+  padding-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    flex-direction: row;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.page-footer__hashtag {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

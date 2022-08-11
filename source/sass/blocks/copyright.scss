@@ -1,0 +1,32 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 26px;
+  margin-right: 12px;
+  margin-top: -6px;
+  font-weight: normal;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+.copyright__link {
+  position: relative;
+}
+
+.copyright__link-icon {
+  fill: $black;
+
+  &:hover {
+    fill: $bg-blue;
+  }
+
+  &:active {
+    fill: $black-active;
+  }
+}
