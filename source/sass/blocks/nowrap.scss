@@ -1,0 +1,13 @@
+.nowrap {
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      white-space: nowrap;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      white-space: nowrap;
+    }
+  }
+}
