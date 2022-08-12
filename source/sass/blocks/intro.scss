@@ -13,7 +13,7 @@
     background-image: url("../img/bg-intro-index@2x.jpg");
   }
 
-  &:after {
+  &::after {
     content: "";
     background-image: url("../img/intro-triangle.svg");
     height: 57px;
