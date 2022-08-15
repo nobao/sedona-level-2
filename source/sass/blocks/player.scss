@@ -1,0 +1,151 @@
+.player {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.player__image-wrapper {
+  width: 320px;
+  height: 201px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    min-width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.player__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player__interface {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  padding: 23px 23px;
+  box-sizing: border-box;
+  width: 87.5%;
+  background-color: $player__interface-mobile;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    padding: 35px 35px;
+    padding-right: 40px;
+    width: 100%;
+    background-color: $player__interface-tablet;
+  }
+}
+
+.player__button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.player__button--replay {
+  margin-right: auto;
+}
+
+.player__slider {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  height: 45px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22px 20px;
+  background-color: $player__interface-tablet;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    width: 428px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    left: 74px;
+    top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.player__scale {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  transform: translateY(-50%);
+  display: block;
+  height: 3px;
+  background-color: $white;
+  opacity: 0.2;
+}
+
+.player__pointer {
+  position: absolute;
+  top: 50%;
+  left: 56px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 131px;
+  }
+}
+
+.player__button--subtitles {
+  margin-right: 33px;
+}
+
+.player__icon {
+  @media (max-width: $mobile-width-only) {
+    fill: $player-icon-mobile;
+
+    &:hover {
+      fill: $player-icon-mobile-hover;
+    }
+
+    &:active {
+      fill: $player-icon-mobile-hover;
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: $white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
