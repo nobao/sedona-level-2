@@ -1,0 +1,450 @@
+.feedback-form {
+  display: grid;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    min-width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 960px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.feedback-form__list {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 65px 20px 5px;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding: 0;
+  }
+}
+
+.feedback-form__list--name {
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+    padding-top: 55px;
+    position: relative;
+    margin-bottom: 53px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      background-color: #dbdbdb;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    margin-bottom: 49px;
+  }
+}
+
+.feedback-form__list--feeling {
+  padding-top: 67px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1/2/2;
+    padding-top: 58px;
+    margin-left: 0;
+  }
+}
+
+.feedback-form__list--contacts {
+  padding-top: 57px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 2/1/3/3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 16px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.feedback-form__list--place {
+  padding-top: 87px;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 3/1/4/3;
+    padding-top: 45px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.feedback-form__list--description {
+  padding-top: 61px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 4/1/5/3;
+    padding-top: 56px;
+    margin-bottom: 49px;
+  }
+}
+
+.feedback-form__list--submit {
+  border-top: 0;
+  padding-top: 0;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    grid-area: 5/1/6/3;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.feedback-form__checkbox-container {
+  @media (min-width: $tablet-width) {
+    padding-left: 95px;
+    padding-right: 35px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.feedback-form__title {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+
+  &--place {
+    top: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    font-size: 21px;
+  }
+}
+
+.feedback-form__stricked-text {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--feeling {
+    @media (min-width: $desktop-width) {
+      padding-left: 80px;
+    }
+  }
+}
+
+.feedback-form__stricked-text--decor {
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+.feedback-form__stricked-text--decor::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    flex-shrink: 0;
+    width: 19%;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 29%;
+  }
+}
+
+.feedback-form__stricked-text--decor::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    flex-shrink: 0;
+    width: 19%;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 29%;
+  }
+}
+
+.feedback-form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &--name {
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 19px;
+  }
+
+  &--contacts {
+    margin-bottom: 9px;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--feeling {
+    margin-bottom: 13px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &--place {
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+      min-width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-bottom: 0;
+      min-width: 15%;
+    }
+  }
+}
+
+.feedback-form__label {
+  font-size: 18px;
+  color: $black;
+  font-weight: bold;
+  text-transform: none;
+  line-height: 26px;
+
+  &--font {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $text-color;
+    font-weight: normal;
+  }
+
+  &--contacts {
+    padding-left: 20px;
+    padding-bottom: 7px;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 16px;
+    }
+  }
+}
+
+.feedback-form__label--contacts span {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.feedback-form__input {
+  padding: 15px 15px 10px;
+  margin: 0;
+
+  &--name {
+    margin-left: 16px;
+    width: 100%;
+  }
+
+  &--contacts {
+    width: 100%;
+    border-right: 0;
+    padding-left: 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+}
+
+.feedback-form__group {
+  position: relative;
+  width: 100%;
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.feedback-form__group--email::after {
+  background-image: url("../img/email.svg");
+}
+
+.feedback-form__group--phone::after {
+  background-image: url("../img/phone.svg");
+}
+
+.feedback-form__radio-icon {
+  background-color: $bg-input-color;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.feedback-form__radio-icon:hover {
+  background-color: $bg-input-color-hover;
+}
+
+.feedback-form__radio-icon:active {
+  background-color: $bg-input-color-active;
+}
+
+.feedback-form__input-radio {
+  appearance: none;
+}
+
+.feedback-form__input-radio:checked + .feedback-form__radio-icon::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: #333333;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feedback-form__input-radio:active + .feedback-form__radio-icon::after {
+  opacity: 0.3;
+}
+
+.feedback-form__input-checkbox {
+  background-color: $bg-input-color;
+  border-radius: 5px;
+  width: 56px;
+  height: 56px;
+  margin-right: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  appearance: none;
+
+  &:checked {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' viewBox='0 0 24 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z' fill='black'/%3E%3C/svg%3E%0A");
+  }
+
+  &:hover {
+    background-color: $bg-input-color-hover;
+  }
+
+  &:active {
+    background-color: $bg-input-color-active;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' viewBox='0 0 24 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z' fill='%23333333'/%3E%3C/svg%3E ");
+  }
+}
+
+.feedback-form__textarea {
+  width: 100%;
+  padding-top: 10px;
+  min-height: 160px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.feedback-form__submit {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    margin: 0;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 34px;
+  }
+}
+
+.feedback-form__small {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
